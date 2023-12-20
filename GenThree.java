@@ -11,19 +11,27 @@ public class GenThree {
 	int maxVal = Math.max(a, b);
 	int minVal = Math.min(a, b);
 
-	int num1 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
-	int num2 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
-	int num3 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
-		
-	System.out.println(num1);
-	System.out.println(num2);
-	System.out.println(num3);
-		
-	int minNum = Math.min(Math.min(num1, num2), Math.min(num2, num3));
-		
-	System.out.println("The minimal generated number was " + minNum);
-		
+	int n1 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
+	int n2 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
+	int n3 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
 
+	int i = 0;
+	while(i < 1){
+
+		if((n1 != n2) && (n2 != n3) && (n3 != n1)){
+			
+			System.out.println(n1);
+			System.out.println(n2);
+			System.out.println(n3);
+
+			int minNum = Math.min(Math.min(n1, n2), Math.min(n2, n3));
+
+			System.out.println("The minimal generated number was " + minNum);
+
+			i = i + 1;
+		}
+	}
+	
 	}
 }
 
