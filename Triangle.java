@@ -12,7 +12,7 @@ public class Triangle {
 
 			if  ((a<(b+c)) && (b<(a+c)) && (c<(b+a))) {
 
-				System.out.println(a + ", " + b + ", " + c + " : " + "true");
+				System.out.println(a + ", " + b + ", " + c + ": " + "true");
 			}
 			else {
 
