@@ -11,14 +11,14 @@ public class GenThree {
 	int maxVal = Math.max(a, b);
 	int minVal = Math.min(a, b);
 
-	int n1 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
-	int n2 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
-	int n3 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal );
+	int n1 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal);
+	int n2 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal);
+	int n3 = (int) ( Math.random()*(maxVal - minVal + 1) + minVal);
 
 	int i = 0;
 	while(i < 1){
 
-		if((n1 != n2) && (n2 != n3) && (n3 != n1)){
+		if((n1 != maxVal) && (n2 != maxVal) && (n3 != maxVal)){
 			
 			System.out.println(n1);
 			System.out.println(n2);
