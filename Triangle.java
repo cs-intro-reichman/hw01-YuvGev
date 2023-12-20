@@ -16,7 +16,7 @@ public class Triangle {
 			}
 			else {
 
-				System.out.println(a + ", " + b + ", " + c + " : " + " false");
+				System.out.println(a + ", " + b + ", " + c + ": " + " false");
 			}	
 	}
 }
