@@ -5,21 +5,21 @@
 public class GenThree {
 	public static void main(String[] args) {
 		// Put your code here	
-	int a = Integer.parseInt(args[0]); 
-	int b = Integer.parseInt(args[1]);
+	int input1 = Integer.parseInt(args[0]); 
+	int input2 = Integer.parseInt(args[1]);
 
-	int maxVal = Math.max(a, b);
-	int minVal = Math.min(a, b);
+	int maxVal = Math.max(input1, input2);
+	int minVal = Math.min(input1, input2);
 
-	int n1 = (int) ( Math.random()*(maxVal - minVal) + minVal);
-	int n2 = (int) ( Math.random()*(maxVal - minVal) + minVal);
-	int n3 = (int) ( Math.random()*(maxVal - minVal) + minVal);
+	int num1 = (int) ( Math.random()*(maxVal - minVal) + minVal);
+	int num2 = (int) ( Math.random()*(maxVal - minVal) + minVal);
+	int num3 = (int) ( Math.random()*(maxVal - minVal) + minVal);
 	
-	System.out.println(n1);
-	System.out.println(n2);
-	System.out.println(n3);
+	System.out.println(num1);
+	System.out.println(num2);
+	System.out.println(num3);
 
-	int minNum = Math.min(Math.min(n1, n2), Math.min(n2, n3));
+	int minNum = Math.min(Math.min(num1, num2), Math.min(num2, num3));
 
 	System.out.println("The minimal generated number was " + minNum);
 	}
