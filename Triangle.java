@@ -10,7 +10,11 @@ public class Triangle {
 		int b = Integer.parseInt(args[1]); 
 		int c = Integer.parseInt(args[2]); 
 
-			if  ((a<(b+c)) && (b<(a+c)) && (c<(b+a))) {
+		int sum1 = a + b;
+		int sum2 = b + c;
+		int sum3 = a + c;
+
+			if  ((a < sum2) && (b < sum3) && (c < sum1)) {
 
 				System.out.println(a + ", " + b + ", " + c + ": " + "true");
 			}
